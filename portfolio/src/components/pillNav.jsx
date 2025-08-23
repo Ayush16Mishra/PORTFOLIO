@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 
 const PillNav = ({
-  logo,
-  logoAlt = "Logo",
+  
   items,
   activeHref,
   className = "",
@@ -21,8 +20,6 @@ const PillNav = ({
   const circleRefs = useRef([]);
   const tlRefs = useRef([]);
   const activeTweenRefs = useRef([]);
-  const logoImgRef = useRef(null);
-  const logoTweenRef = useRef(null);
   const hamburgerRef = useRef(null);
   const mobileMenuRef = useRef(null);
   const navItemsRef = useRef(null);
@@ -154,18 +151,7 @@ const PillNav = ({
     });
   };
 
-  const handleLogoEnter = () => {
-    const img = logoImgRef.current;
-    if (!img) return;
-    logoTweenRef.current?.kill();
-    gsap.set(img, { rotate: 0 });
-    logoTweenRef.current = gsap.to(img, {
-      rotate: 360,
-      duration: 0.2,
-      ease,
-      overwrite: "auto",
-    });
-  };
+
 
   const toggleMobileMenu = () => {
     const newState = !isMobileMenuOpen;
@@ -245,52 +231,7 @@ const PillNav = ({
         aria-label="Primary"
         style={cssVars}
       >
-        {isRouterLink(items?.[0]?.href) ? (
-          <Link
-            to={items[0].href}
-            aria-label="Home"
-            onMouseEnter={handleLogoEnter}
-            role="menuitem"
-            ref={(el) => {
-              logoRef.current = el;
-            }}
-            className="rounded-full p-2 inline-flex items-center justify-center overflow-hidden"
-            style={{
-              width: "var(--nav-h)",
-              height: "var(--nav-h)",
-              background: "var(--base, #000)",
-            }}
-          >
-            <img
-              src={logo}
-              alt={logoAlt}
-              ref={logoImgRef}
-              className="w-full h-full object-cover block"
-            />
-          </Link>
-        ) : (
-          <a
-            href={items?.[0]?.href || "#"}
-            aria-label="Home"
-            onMouseEnter={handleLogoEnter}
-            ref={(el) => {
-              logoRef.current = el;
-            }}
-            className="rounded-full p-2 inline-flex items-center justify-center overflow-hidden"
-            style={{
-              width: "var(--nav-h)",
-              height: "var(--nav-h)",
-              background: "var(--base, #000)",
-            }}
-          >
-            <img
-              src={logo}
-              alt={logoAlt}
-              ref={logoImgRef}
-              className="w-full h-full object-cover block"
-            />
-          </a>
-        )}
+        
 
         <div
           ref={navItemsRef}
