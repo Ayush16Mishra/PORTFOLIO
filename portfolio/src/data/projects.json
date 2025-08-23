@@ -4,7 +4,7 @@
     "title": "Portfolio Website",
     "description": "A personal portfolio showcasing my projects.",
     "fullDescription": "This project was built using React and Tailwind CSS.\nIt includes animations and a responsive layout.",
-    "image": "/public/portfolio.jpeg",
+    "image": "/portfolio.jpeg",
     "github": "https://github.com/yourusername/portfolio",
     "website": "https://yourdomain.com",
     "technologies": ["React", "Tailwind CSS", "Framer Motion"]
@@ -14,7 +14,7 @@
     "title": "Weather App",
     "description": "A simple weather app with real-time data.",
     "fullDescription": "Built with React and OpenWeatherMap API.\nIncludes search by city and 5-day forecast.",
-    "image": "/public/weather.jpg",
+    "image": "/weather.jpg",
     "github": "https://github.com/yourusername/weather-app",
     "website": "https://weather.yourdomain.com",
     "technologies": ["React", "OpenWeatherMap API", "CSS"]
