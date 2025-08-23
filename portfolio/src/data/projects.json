@@ -1,22 +1,21 @@
 [
   {
     "id": 1,
-    "title": "Portfolio Website",
-    "description": "A personal portfolio showcasing my projects.",
+    "title": "Balance Buddy",
+    "description": "Balance Buddy is an expense splitting application with a plethora of features to help analyze and plan trips between large groups.",
     "fullDescription": "This project was built using React and Tailwind CSS.\nIt includes animations and a responsive layout.",
-    "image": "/portfolio.jpeg",
-    "github": "https://github.com/yourusername/portfolio",
-    "website": "https://yourdomain.com",
-    "technologies": ["React", "Tailwind CSS", "Framer Motion"]
+    "image": "/balancebuddy.png",
+    "github": "https://github.com/Ayush16Mishra/BalanceBuddy",
+    "website": "https://balance-buddy-ruddy.vercel.app/",
+    "technologies": ["React", "Tailwind CSS", "Framer Motion","Express","Postgress SQL","Material UI"]
   },
   {
     "id": 2,
-    "title": "Weather App",
-    "description": "A simple weather app with real-time data.",
+    "title": "Star Stream(Hackathon:Hack-the-future)",
+    "description": "StarStream is an interactive learning application designed to empower deaf and mute children by making education accessible and engaging. The platform helps children learn English, Mathematics, and Sign Language through *quizzes and mini-games, fostering an *inclusive and personalized learning experience.With an intuitive UI/UX built specifically for children, StarStream ensures a natural learning flow while also providing parents with tools to track their child’s progress.",
     "fullDescription": "Built with React and OpenWeatherMap API.\nIncludes search by city and 5-day forecast.",
-    "image": "/weather.jpg",
-    "github": "https://github.com/yourusername/weather-app",
-    "website": "https://weather.yourdomain.com",
-    "technologies": ["React", "OpenWeatherMap API", "CSS"]
+    "image": "/StarStream.png",
+    "github": "https://github.com/Ayush16Mishra/StarStream",
+    "technologies": ["React", "Express", "Tailwind CSS","Postgress SQL","Material UI","Figma"]
   }
 ]

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin, FileText } from 'lucide-react';
 
 export default function ContactMe() {
   return (
@@ -16,14 +16,14 @@ export default function ContactMe() {
         {/* Icons Section */}
         <div className="flex gap-4 mt-2 sm:mt-0">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:your.ayushpc025@gmail.com"
             className="hover:text-blue-400 transition"
             title="Email"
           >
             <Mail size={20} />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Ayush16Mishra"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300 transition"
@@ -32,13 +32,23 @@ export default function ContactMe() {
             <Github size={20} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/ayush-mishra-839348291/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition"
             title="LinkedIn"
           >
             <Linkedin size={20} />
+          </a>
+          {/* Resume Open in New Tab */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-400 transition"
+            title="View Resume"
+          >
+            <FileText size={20} />
           </a>
         </div>
       </div>
