@@ -1,0 +1,39 @@
+.scene {
+  width: 600px;
+  height: 400px;
+  perspective: 1200px;
+  margin: auto;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.carousel__cell {
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  left: calc(50% - 130px);
+  top: calc(50% - 100px);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__cell h3 {
+  margin-bottom: 10px;
+}
+.carousel__cell span {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin: 2px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+#root{
+  margin: 0;
+  padding:0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000; /* match your background */
+  overflow-x: hidden; /* prevent horizontal scroll if any */
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
