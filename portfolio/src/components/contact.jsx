@@ -16,7 +16,7 @@ export default function ContactMe() {
         {/* Icons Section */}
         <div className="flex gap-4 mt-2 sm:mt-0">
           <a
-            href="mailto:your.ayushpc025@gmail.com"
+            href="mailto:ayushpc025@gmail.com"
             className="hover:text-blue-400 transition"
             title="Email"
           >
